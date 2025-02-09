@@ -13,7 +13,7 @@ class Product extends Model
   protected $fillable = [
     'name',
     'category_id',
-    'size', // أضف هذا العمود هنا
+    'size', 
   ];
   public function sizes()
   {

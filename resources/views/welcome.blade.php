@@ -151,12 +151,12 @@
       <div class="card product-item border-0 mb-4">
         <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
         @if ($product->images->isNotEmpty())
-      {{-- عرض الصورة الأولى المرتبطة بالمنتج --}}
+
 
       <img class="img-fluid w-100" src="{{ asset('img/' . $product->images->first()->image_path . '.jpg') }}"
         alt="{{ $product->name }}">
     @else
-    {{-- صورة افتراضية عند عدم وجود صور --}}
+
     <img class="img-fluid w-100" src="{{ asset('img/cat-6.jpg') }}" alt="Default Image">
   @endif
         </div>
